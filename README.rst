@@ -1,6 +1,9 @@
 Json log formatter
 =======================
 
+.. image:: https://travis-ci.org/ObadaAlexandru/JsonLogFormatter.svg?branch=master
+    :target: https://travis-ci.org/ObadaAlexandru/JsonLogFormatter
+
 Formats the log messages in a JSON format as follows:
 .. highlight :: json
 ::

@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='JsonLogFormatter',
-    version='1.0.0',
+    version='1.0.1',
     packages=['json_formatter', ],
     description='Json log formatter',
     long_description=long_description,
@@ -21,7 +21,7 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Logging',
+        'Topic :: System :: Logging',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
     ],

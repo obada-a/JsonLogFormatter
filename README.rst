@@ -5,7 +5,7 @@ Json log formatter
     :target: https://travis-ci.org/ObadaAlexandru/JsonLogFormatter
 
 Formats the log messages in a JSON format as follows:
-.. highlight :: json
+
 ::
  {   "description": "Some exception",
      "log_type": "application_log"

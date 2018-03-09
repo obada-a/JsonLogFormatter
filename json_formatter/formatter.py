@@ -6,8 +6,8 @@ TRANSLATION_TABLE = {
     'threadName': 'thread',
     'levelname': 'severity',
     'process': 'pid',
-    'module': 'module',
-    'pathname': 'source_file',
+    # 'module': 'module',
+    # 'pathname': 'source_file',
 }
 
 

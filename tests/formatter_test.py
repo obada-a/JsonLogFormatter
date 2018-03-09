@@ -18,11 +18,12 @@ class JsonLogFormatter(unittest.TestCase):
                                         exc_info=None)
         actual_message = json.loads(self.formatter.format(test_record))
 
+        self.assertTrue('@timestamp' in actual_message)
+        del actual_message['@timestamp']
         self.assertDictEqual(self.expected_message(test_record), actual_message)
 
     def expected_message(self, record):
         message = {
-            '@timestamp': datetime.fromtimestamp(record.created).isoformat(),
             'description': record.getMessage(),
             'source_file': record.pathname,
             'pid': record.process,

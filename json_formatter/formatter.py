@@ -1,5 +1,5 @@
 import logging, json
-from datetime import datetime
+from datetime import datetime, timezone
 
 TRANSLATION_TABLE = {
     'threadName': 'thread',
@@ -22,5 +22,5 @@ class JSONFormatter(logging.Formatter):
                 log_message[TRANSLATION_TABLE[key]] = item
         if record.exc_info:
             log_message['stacktrace'] = self.formatException(record.exc_info)
-        log_message['@timestamp'] = datetime.fromtimestamp(record.created).isoformat()
+        log_message['@timestamp'] = datetime.now(timezone.utc).isoformat()
         return json.dumps(log_message)

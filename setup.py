@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='JsonLogFormatter',
-    version='1.0.5',
+    version='1.0.6',
     packages=['json_formatter', ],
     install_requires=['tzlocal==1.5.1'],
     description='Json log formatter',

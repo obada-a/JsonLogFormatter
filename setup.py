@@ -11,7 +11,7 @@ setup(
     name='JsonLogFormatter',
     version='1.0.6',
     packages=['json_formatter', ],
-    install_requires=['tzlocal==1.5.1'],
+    install_requires=['tzlocal==2.0.0'],
     description='Json log formatter',
     long_description=long_description,
     author='Team Chili Zooplus AG',
